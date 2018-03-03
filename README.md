@@ -9,6 +9,6 @@ Generation has three steps:
 It also can put height map to blue channel of texture.
 
 It has Height2NormalMapPreview component to preview bump effect in Scene View when you configure generator options.
-It use AssetPostprocessor to update normal map texture automatically when height map changing. 
+It uses AssetPostprocessor to update normal map texture automatically when height map changing. 
 
 

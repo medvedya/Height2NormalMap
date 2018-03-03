@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEditor;
 using System.IO;
-namespace HeightMap2NormalMap
+namespace Height2NormalMap
 {
     [System.Serializable]
     public struct NormalMapFileGenerator

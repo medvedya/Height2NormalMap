@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-namespace HeightMap2NormalMap
+namespace Height2NormalMap
 {
     [System.Serializable]
     public struct SobelNormalMapFilter : IFilter

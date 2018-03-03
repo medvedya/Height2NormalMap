@@ -1,18 +1,18 @@
 ﻿#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
-namespace HeightMap2NormalMap
+namespace Height2NormalMap
 {
-    [CustomEditor(typeof(HeightMap2NormalMapAsset))]
-    public class HeightMap2NormalMapAssetEditor : Editor
+    [CustomEditor(typeof(Height2NormalMapAsset))]
+    public class Height2NormalMapAssetEditor : Editor
     {
-        HeightMap2NormalMapAsset mapCreator;
+        Height2NormalMapAsset mapCreator;
         RenderTexture rTex;
         GUIContent texContent;
         private void OnEnable()
         {
             serializedObject.Update();
-            mapCreator = this.target as HeightMap2NormalMapAsset;
+            mapCreator = this.target as Height2NormalMapAsset;
             mapCreator.RevertEditProperty();
             rTex = new RenderTexture(256, 256, 0);
             EditorUtility.SetDirty(mapCreator);

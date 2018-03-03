@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-namespace HeightMap2NormalMap
+namespace Height2NormalMap
 {
     public enum HeightAndNormalMapСombinerMode { RGB_normal, RG_normal_B_height, ALL_height }
     [System.Serializable]

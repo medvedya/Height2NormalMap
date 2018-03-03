@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-namespace HeightMap2NormalMap
+namespace Height2NormalMap
 {
     public class HeightMap2NormalMapPostProcessor : AssetPostprocessor
     {
@@ -20,14 +20,14 @@ namespace HeightMap2NormalMap
             if (loadedTextures.Count > 0)
             {
                 var guids = AssetDatabase.FindAssets("t:HeightMap2NormalMapAsset");
-                HeightMap2NormalPreview[] previewObjects = null;
+                Height2NormalMapPreview[] previewObjects = null;
                 if (guids.Length > 0)
                 {
-                    previewObjects = GameObject.FindObjectsOfType<HeightMap2NormalPreview>();
+                    previewObjects = GameObject.FindObjectsOfType<Height2NormalMapPreview>();
                 }
                 foreach (var item in guids)
                 {
-                    var obj = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(item)) as HeightMap2NormalMapAsset;
+                    var obj = AssetDatabase.LoadMainAssetAtPath(AssetDatabase.GUIDToAssetPath(item)) as Height2NormalMapAsset;
                     foreach (var texItem in loadedTextures)
                     {
                         obj.UpdateIfYourMap(texItem, previewObjects);

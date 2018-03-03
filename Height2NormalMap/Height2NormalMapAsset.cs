@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-namespace HeightMap2NormalMap
+namespace Height2NormalMap
 {
     [CreateAssetMenu()]
     [ExecuteInEditMode]
-    public class HeightMap2NormalMapAsset : ScriptableObject
+    public class Height2NormalMapAsset : ScriptableObject
     {
         public NormalMapFileGenerator generator = new NormalMapFileGenerator()
         {
@@ -70,11 +70,11 @@ namespace HeightMap2NormalMap
         {
             editGenerator.generator.Apply(destination);
         }
-        public void UpdateIfYourMap(Texture tex, HeightMap2NormalPreview[] previewObjects = null)
+        public void UpdateIfYourMap(Texture tex, Height2NormalMapPreview[] previewObjects = null)
         {
             if (editGenerator.HasMap(tex))
             {
-                var a = previewObjects == null ? FindObjectsOfType<HeightMap2NormalPreview>() : previewObjects;
+                var a = previewObjects == null ? FindObjectsOfType<Height2NormalMapPreview>() : previewObjects;
                 foreach (var item in a)
                 {
                     item.UpdateMapIfMine(this);

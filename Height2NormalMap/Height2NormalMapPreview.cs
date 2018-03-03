@@ -2,13 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace HeightMap2NormalMap
+namespace Height2NormalMap
 {
     [ExecuteInEditMode]
-    public class HeightMap2NormalPreview : MonoBehaviour
+    public class Height2NormalMapPreview : MonoBehaviour
     {
 
-        [SerializeField] HeightMap2NormalMapAsset heightMap2NormalMapAsset;
+        [SerializeField] Height2NormalMapAsset heightMap2NormalMapAsset;
 
         [SerializeField] string normalMapShaderAttribute = "_BumpMap";
         [SerializeField] bool toAlphaGreenNormalMapConversion = false;
@@ -26,7 +26,7 @@ namespace HeightMap2NormalMap
             UpdateMap();
 
         }
-        public void UpdateMapIfMine(HeightMap2NormalMapAsset asset)
+        public void UpdateMapIfMine(Height2NormalMapAsset asset)
         {
             if (asset == heightMap2NormalMapAsset)
             {

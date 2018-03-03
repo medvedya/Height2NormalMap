@@ -1,7 +1,7 @@
 # Height2NormalMap
 This tool create a normal map from height map.
 It use Gaussian blur and Sobel operator for generation.
-Generation has three steps:
+Generation has four steps:
 * first blur
 * generate normal map by Sobel operator
 * second blur

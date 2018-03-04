@@ -19,7 +19,7 @@ namespace Height2NormalMap
             }
             if (loadedTextures.Count > 0)
             {
-                var guids = AssetDatabase.FindAssets("t:HeightMap2NormalMapAsset");
+                var guids = AssetDatabase.FindAssets("t:Height2NormalMapAsset");
                 Height2NormalMapPreview[] previewObjects = null;
                 if (guids.Length > 0)
                 {
